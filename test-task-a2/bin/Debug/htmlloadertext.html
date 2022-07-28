@@ -1,0 +1,285 @@
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Единая государственная автоматизированная информационная система "УЧЁТ ДРЕВЕСИНЫ И СДЕЛОК С НЕЙ"</title><link href="/open-area/images/favicon.png" rel="shortcut icon" type="image/x-icon"><link href="/open-area/static/css/main.d81a0fab.css" rel="stylesheet"><style type="text/css">/**
+ * Variables
+ */
+/**
+ * Special
+ */
+.wrapper {
+  position: relative;
+  width: calc(100% - 250px);
+  min-width: 1024px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.dn {
+  display: none;
+}
+.noborder {
+  border: 0;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(/open-area/static/media/OpenSans-Regular.d7d5d458.ttf);
+}
+body,
+select,
+input,
+textarea,
+button {
+  font-family: 'Open Sans';
+}
+/**
+ * PSKO app styles
+ */
+.app {
+  background-color: #82b668;
+  min-height: 100vh;
+}
+.app__main {
+  background-color: #e6e6e6;
+  min-height: calc(100vh - 145px);
+}
+.app__main .row {
+  min-width: 0;
+}
+.app__nav {
+  background-color: #82b668;
+  margin-bottom: 0;
+  border: none;
+  height: 90px;
+}
+.app__nav .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.app__footer {
+  height: 55px;
+  background-color: #e6e6e6;
+  border-top: 1px solid #cfcfcf;
+}
+/**
+ * app__nav styles
+ */
+.nav__menu {
+  color: #000333 !important;
+  padding: 20px 0 0 0;
+}
+.nav__greeting {
+  font-size: 14px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.nav__greeting strong {
+  text-decoration: underline;
+}
+.nav__icon {
+  font-size: 24px;
+  padding: 0 15px;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.nav__icon:hover {
+  opacity: 0.8;
+}
+.nav__icon:nth-last-of-type(1) {
+  padding-right: 2px;
+}
+.nav__title {
+  padding: 6px 0 0 43px;
+  position: relative;
+}
+.nav__title span {
+  font-size: 18px;
+  color: #000333;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+.nav__title:before {
+  content: '';
+  background-image: url(/open-area/static/media/logo.cbb96c60.png);
+  position: absolute;
+  left: -31px;
+  top: -5px;
+  width: 60px;
+  height: 70px;
+  display: block;
+  background-size: cover;
+}
+.nav__text {
+  text-align: right;
+  color: #000 !important;
+  margin-left: 100px;
+}
+.nav__return {
+  color: #fff !important;
+}
+/**
+ * app__footer styles
+ */
+.footer__title {
+  padding: 20px 10px 15px 0;
+  float: left;
+  font-size: 12px;
+}
+.footer__version {
+  float: right;
+  padding: 20px 10px 15px 10px;
+  font-size: 12px;
+}
+/**
+ * External tabs styles
+ */
+.bp-layout-tabs-container__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+.bp-layout-tabs-container__content div:nth-of-type(1) {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bp-layout-tabs-container__content:hover div:nth-of-type(2) {
+  position: absolute;
+  display: block;
+  top: 50px;
+  background-color: #212121;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 200px;
+  white-space: normal;
+  opacity: 0.9;
+}
+.bp-layout-tabs-container__content:hover div:nth-of-type(2):before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #212121;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.bp-layout-tabs-container .nav-tabs {
+  border-bottom: 2px solid #148cc5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  background-color: #f4f7fb;
+}
+.bp-layout-tabs-container .nav-tabs li {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  margin-bottom: -2px;
+  min-width: 50px;
+  white-space: nowrap;
+}
+.bp-layout-tabs-container .nav-tabs a {
+  margin-right: 0;
+  color: #000;
+  padding: 15px;
+  height: 55px;
+}
+.bp-layout-tabs-container .nav-tabs .active a,
+.bp-layout-tabs-container .nav-tabs .active a:hover,
+.bp-layout-tabs-container .nav-tabs .active a:active,
+.bp-layout-tabs-container .nav-tabs .active a:focus {
+  background-color: #148cc5;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #2e3192;
+  border-radius: 0;
+  outline: none;
+}
+.bp-layout-tabs-content {
+  padding: 10px 20px;
+}
+/**
+ * Tablet devices media
+ */
+@media screen and (max-width: 1024px) {
+  .app {
+    background-size: auto;
+  }
+  .app__nav {
+    padding: 0 15px;
+  }
+  .wrapper {
+    width: 100%;
+    min-width: 0;
+  }
+}
+/**
+ * Mobile devices media
+ */
+@media screen and (max-width: 425px) {
+  .app__footer {
+    height: auto;
+  }
+  .app__footer div {
+    float: none;
+  }
+  .footer__title {
+    padding-top: 5px;
+  }
+  .footer__version {
+    display: none;
+  }
+}
+.react-datepicker {
+  font-size: 1.3rem !important;
+}
+.react-datepicker__current-month {
+  font-size: 1.5rem !important;
+}
+.react-datepicker__header {
+  padding-top: 6px !important;
+}
+.react-datepicker__navigation {
+  top: 13px !important;
+}
+.react-datepicker__day-name,
+.react-datepicker__day {
+  margin: 0.5rem !important;
+}
+.react-table-cell {
+  display: table-cell;
+}
+.react-pagination-toolbar .x-btn-button {
+  padding: 0 10px;
+}
+.react-pagination-toolbar .x-toolbar-text {
+  padding: 0 20px !important;
+}
+.react-pagination-toolbar .x-btn-button {
+  cursor: pointer;
+}
+.react-pagination-toolbar .x-btn-disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+.react-pagination-toolbar .x-btn-icon > .x-btn-icon-el {
+  width: 16px;
+  height: 16px;
+}
+</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><nav class="app__nav navbar navbar-default"><div class="container-fluid"><div class="wrapper"><div class="navbar-collapse collapse"><p class="nav__title navbar-text navbar-left"><span>ФЕДЕРАЛЬНОЕ АГЕНТСТВО<br>ЛЕСНОГО ХОЗЯЙСТВА</span></p><p class="nav__text navbar-text"><span>Единая государственная автоматизированная информационная система</span><br><span>"УЧЁТ ДРЕВЕСИНЫ И СДЕЛОК С НЕЙ"</span></p><a href="http://lesegais.ru" class="nav__return navbar-link navbar-right">ВЕРНУТЬСЯ</a></div></div></div></nav><div class="app__main wrapper container-fluid"><div class="row"><div class="bp-layout-tabs-container"><div class="dropdown btn-group"><button id="menu" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default">Сделки с древесиной <span class="caret"></span></button><ul role="menu" class="dropdown-menu" aria-labelledby="menu"><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Государственные контракты и задания</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Договоры аренды лесного участка</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Договоры купли-продажи лесных насаждений</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Документы основания права пользования лесного участка</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Сделки с древесиной</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Маркировка ценных пород</a></li><li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Лесные декларации</a></li></ul></div></div><div class="bp-layout-tabs-content"><div><div><div><button type="button" class="btn btn-default">Поиск</button><div class="noborder panel panel-default"><div class="panel-collapse collapse" aria-hidden="true"><div class="panel-body"><form class="form-horizontal"><div class="form-group"><label class="col-sm-2 control-label">Номер декларации</label><div class="col-sm-4"><input type="text" placeholder="Номер декларации" name="dealNumber" value="" class="form-control"></div><label class="col-sm-2 control-label">Дата сделки</label><div class="col-sm-2"><div><div class="react-datepicker-wrapper"><div class="react-datepicker__input-container"><input type="text" value="" placeholder="С" class="form-control"></div></div></div></div><div class="col-sm-2"><div><div class="react-datepicker-wrapper"><div class="react-datepicker__input-container"><input type="text" value="" placeholder="По" class="form-control"></div></div></div></div></div><div class="form-group"><label class="col-sm-2 control-label">Название продавца</label><div class="col-sm-4"><input type="text" placeholder="Название продавца" name="sellerName" value="" class="form-control"></div><label class="col-sm-2 control-label">ИНН продавца</label><div class="col-sm-4"><input type="text" placeholder="ИНН продавца" name="sellerInn" value="" class="form-control"></div></div><div class="form-group"><label class="col-sm-2 control-label">Название покупателя</label><div class="col-sm-4"><input type="text" placeholder="Название покупателя" name="buyerName" value="" class="form-control"></div><label class="col-sm-2 control-label">ИНН покупателя</label><div class="col-sm-4"><input type="text" placeholder="ИНН покупателя" name="buyerInn" value="" class="form-control"></div></div><div class="form-group"><label class="col-sm-2 control-label">Тип договора</label><div class="col-sm-4"><select name="contractType" class="form-control"><option value="">Выберите значение</option><option value="Deal">Договор купли-продажи</option><option value="Commission">Договор комиссии</option></select></div></div><div class="form-group"><div class="col-sm-10 col-sm-offset-2"><button type="reset" disabled="" class="btn btn-default">Сброс</button>&nbsp;<button type="submit" disabled="" class="btn btn-default">Найти</button></div></div></form></div></div></div></div><br><div class="text-right">Условные обозначения: "Пр." - со стороны продавца, "Пк." - со стороны покупателя.</div><div><div class="ag-bootstrap"><div style="height: 100%;"><div class="ag-bl ag-bl-full-height ag-layout-normal ag-scrolls ag-ltr" id="borderLayout_eRootPanel">      <div class="ag-bl-center ag-bl-full-height-center" ref="center" style="margin-left: 0px; width: 984px;"><div class="ag-bl ag-bl-full-height" id="borderLayout_eGridPanel">      <div class="ag-bl-center ag-bl-full-height-center" ref="center" style="margin-left: 0px; width: 984px;"><div class="ag-root ag-font-style" role="grid"><div class="ag-header ag-pivot-off" role="row" style="height: 30px;"><div class="ag-pinned-left-header" role="presentation" style="display: none; width: 0px;"><div class="ag-header-row" role="presentation" style="top: 0px; height: 30px; width: 0px;"></div></div><div class="ag-pinned-right-header" role="presentation" style="display: none; width: 0px;"><div class="ag-header-row" role="presentation" style="top: 0px; height: 30px; width: 0px;"></div></div><div class="ag-header-viewport" role="presentation" style="margin-left: 0px; margin-right: 0px;"><div class="ag-header-container" role="presentation"><div class="ag-header-row" role="presentation" style="top: 0px; height: 30px; width: 984px;"><div class="ag-header-cell ag-header-cell-sortable" role="presentation" col-id="dealNumber" style="width: 138px; left: 0px;"><div ref="eResize" class="ag-header-cell-resize" role="presentation"></div><span class="ag-header-select-all ag-hidden" role="presentation" ref="cbSelectAll">  <span class="ag-checkbox-checked ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-checked"></span></span>  <span class="ag-checkbox-unchecked" role="presentation"><span class="ag-icon ag-icon-checkbox-unchecked"></span></span>  <span class="ag-checkbox-indeterminate ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-indeterminate"></span></span>  <span class="ag-checkbox-label" role="presentation"></span></span><div class="ag-cell-label-container ag-header-cell-sorted-none" role="presentation">  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button" aria-hidden="true" style="opacity: 0; transition: opacity 0.2s ease 0s, border 0.2s ease 0s;"><span class="ag-icon ag-icon-menu"></span></span>  <div ref="eLabel" class="ag-header-cell-label" role="presentation">    <span ref="eText" class="ag-header-cell-text" role="columnheader">Номер декларации</span>    <span ref="eFilter" class="ag-header-icon ag-filter-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-filter"></span></span>    <span ref="eSortOrder" class="ag-header-icon ag-sort-order ag-hidden" aria-hidden="true"></span>    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-asc"></span></span>    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-desc"></span></span>    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-none"></span></span>  </div></div></div><div class="ag-header-cell ag-header-cell-sortable" role="presentation" title="Наименование продавца" col-id="sellerName" style="width: 141px; left: 138px;"><div ref="eResize" class="ag-header-cell-resize" role="presentation"></div><span class="ag-header-select-all ag-hidden" role="presentation" ref="cbSelectAll">  <span class="ag-checkbox-checked ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-checked"></span></span>  <span class="ag-checkbox-unchecked" role="presentation"><span class="ag-icon ag-icon-checkbox-unchecked"></span></span>  <span class="ag-checkbox-indeterminate ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-indeterminate"></span></span>  <span class="ag-checkbox-label" role="presentation"></span></span><div class="ag-cell-label-container ag-header-cell-sorted-none" role="presentation">  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button" aria-hidden="true" style="opacity: 0; transition: opacity 0.2s ease 0s, border 0.2s ease 0s;"><span class="ag-icon ag-icon-menu"></span></span>  <div ref="eLabel" class="ag-header-cell-label" role="presentation">    <span ref="eText" class="ag-header-cell-text" role="columnheader">Наименование продавца</span>    <span ref="eFilter" class="ag-header-icon ag-filter-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-filter"></span></span>    <span ref="eSortOrder" class="ag-header-icon ag-sort-order ag-hidden" aria-hidden="true"></span>    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-asc"></span></span>    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-desc"></span></span>    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-none"></span></span>  </div></div></div><div class="ag-header-cell ag-header-cell-sortable" role="presentation" col-id="sellerInn" style="width: 141px; left: 279px;"><div ref="eResize" class="ag-header-cell-resize" role="presentation"></div><span class="ag-header-select-all ag-hidden" role="presentation" ref="cbSelectAll">  <span class="ag-checkbox-checked ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-checked"></span></span>  <span class="ag-checkbox-unchecked" role="presentation"><span class="ag-icon ag-icon-checkbox-unchecked"></span></span>  <span class="ag-checkbox-indeterminate ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-indeterminate"></span></span>  <span class="ag-checkbox-label" role="presentation"></span></span><div class="ag-cell-label-container ag-header-cell-sorted-none" role="presentation">  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button" aria-hidden="true" style="opacity: 0; transition: opacity 0.2s ease 0s, border 0.2s ease 0s;"><span class="ag-icon ag-icon-menu"></span></span>  <div ref="eLabel" class="ag-header-cell-label" role="presentation">    <span ref="eText" class="ag-header-cell-text" role="columnheader">ИНН продавца</span>    <span ref="eFilter" class="ag-header-icon ag-filter-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-filter"></span></span>    <span ref="eSortOrder" class="ag-header-icon ag-sort-order ag-hidden" aria-hidden="true"></span>    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-asc"></span></span>    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-desc"></span></span>    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-none"></span></span>  </div></div></div><div class="ag-header-cell ag-header-cell-sortable" role="presentation" title="Наименование покупателя" col-id="buyerName" style="width: 141px; left: 420px;"><div ref="eResize" class="ag-header-cell-resize" role="presentation"></div><span class="ag-header-select-all ag-hidden" role="presentation" ref="cbSelectAll">  <span class="ag-checkbox-checked ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-checked"></span></span>  <span class="ag-checkbox-unchecked" role="presentation"><span class="ag-icon ag-icon-checkbox-unchecked"></span></span>  <span class="ag-checkbox-indeterminate ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-indeterminate"></span></span>  <span class="ag-checkbox-label" role="presentation"></span></span><div class="ag-cell-label-container ag-header-cell-sorted-none" role="presentation">  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button" aria-hidden="true" style="opacity: 0; transition: opacity 0.2s ease 0s, border 0.2s ease 0s;"><span class="ag-icon ag-icon-menu"></span></span>  <div ref="eLabel" class="ag-header-cell-label" role="presentation">    <span ref="eText" class="ag-header-cell-text" role="columnheader">Наименование покупателя</span>    <span ref="eFilter" class="ag-header-icon ag-filter-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-filter"></span></span>    <span ref="eSortOrder" class="ag-header-icon ag-sort-order ag-hidden" aria-hidden="true"></span>    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-asc"></span></span>    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-desc"></span></span>    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-none"></span></span>  </div></div></div><div class="ag-header-cell ag-header-cell-sortable" role="presentation" col-id="buyerInn" style="width: 141px; left: 561px;"><div ref="eResize" class="ag-header-cell-resize" role="presentation"></div><span class="ag-header-select-all ag-hidden" role="presentation" ref="cbSelectAll">  <span class="ag-checkbox-checked ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-checked"></span></span>  <span class="ag-checkbox-unchecked" role="presentation"><span class="ag-icon ag-icon-checkbox-unchecked"></span></span>  <span class="ag-checkbox-indeterminate ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-indeterminate"></span></span>  <span class="ag-checkbox-label" role="presentation"></span></span><div class="ag-cell-label-container ag-header-cell-sorted-none" role="presentation">  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button" aria-hidden="true" style="opacity: 0; transition: opacity 0.2s ease 0s, border 0.2s ease 0s;"><span class="ag-icon ag-icon-menu"></span></span>  <div ref="eLabel" class="ag-header-cell-label" role="presentation">    <span ref="eText" class="ag-header-cell-text" role="columnheader">ИНН покупателя</span>    <span ref="eFilter" class="ag-header-icon ag-filter-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-filter"></span></span>    <span ref="eSortOrder" class="ag-header-icon ag-sort-order ag-hidden" aria-hidden="true"></span>    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-asc"></span></span>    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-desc"></span></span>    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-none"></span></span>  </div></div></div><div class="ag-header-cell ag-header-cell-sortable" role="presentation" col-id="dealDate" style="width: 141px; left: 702px;"><div ref="eResize" class="ag-header-cell-resize" role="presentation"></div><span class="ag-header-select-all ag-hidden" role="presentation" ref="cbSelectAll">  <span class="ag-checkbox-checked ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-checked"></span></span>  <span class="ag-checkbox-unchecked" role="presentation"><span class="ag-icon ag-icon-checkbox-unchecked"></span></span>  <span class="ag-checkbox-indeterminate ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-indeterminate"></span></span>  <span class="ag-checkbox-label" role="presentation"></span></span><div class="ag-cell-label-container ag-header-cell-sorted-none" role="presentation">  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button" aria-hidden="true" style="opacity: 0; transition: opacity 0.2s ease 0s, border 0.2s ease 0s;"><span class="ag-icon ag-icon-menu"></span></span>  <div ref="eLabel" class="ag-header-cell-label" role="presentation">    <span ref="eText" class="ag-header-cell-text" role="columnheader">Дата сделки</span>    <span ref="eFilter" class="ag-header-icon ag-filter-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-filter"></span></span>    <span ref="eSortOrder" class="ag-header-icon ag-sort-order ag-hidden" aria-hidden="true"></span>    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-asc"></span></span>    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-desc"></span></span>    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-none"></span></span>  </div></div></div><div class="ag-header-cell" role="presentation" col-id="0" style="width: 141px; left: 843px;"><div ref="eResize" class="ag-header-cell-resize" role="presentation"></div><span class="ag-header-select-all ag-hidden" role="presentation" ref="cbSelectAll">  <span class="ag-checkbox-checked ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-checked"></span></span>  <span class="ag-checkbox-unchecked" role="presentation"><span class="ag-icon ag-icon-checkbox-unchecked"></span></span>  <span class="ag-checkbox-indeterminate ag-hidden" role="presentation"><span class="ag-icon ag-icon-checkbox-indeterminate"></span></span>  <span class="ag-checkbox-label" role="presentation"></span></span><div class="ag-cell-label-container" role="presentation">    <div ref="eLabel" class="ag-header-cell-label" role="presentation">    <span ref="eText" class="ag-header-cell-text" role="columnheader">Объём по отчётам, м<sup>3</sup></span>    <span ref="eFilter" class="ag-header-icon ag-filter-icon ag-hidden" aria-hidden="true"><span class="ag-icon ag-icon-filter"></span></span>                  </div></div></div></div></div></div><div class="ag-header-overlay" role="presentation" style="height: 30px; top: 0px;"></div></div><div class="ag-floating-top" role="presentation" style="top: 30px; height: 0px;"><div class="ag-pinned-left-floating-top" role="presentation" style="width: 0px;"></div><div class="ag-pinned-right-floating-top" role="presentation" style="width: 0px;"></div><div class="ag-floating-top-viewport" role="presentation"><div class="ag-floating-top-container" role="presentation" style="width: 984px;"></div></div><div class="ag-floating-top-full-width-container ag-hidden" role="presentation"></div></div><div class="ag-floating-bottom" role="presentation" style="height: 0px; top: 600px;"><div class="ag-pinned-left-floating-bottom" role="presentation" style="width: 0px;"></div><div class="ag-pinned-right-floating-bottom" role="presentation" style="width: 0px;"></div><div class="ag-floating-bottom-viewport" role="presentation"><div class="ag-floating-bottom-container" role="presentation" style="width: 984px;"></div></div><div class="ag-floating-bottom-full-width-container ag-hidden" role="presentation"></div></div><div class="ag-body" role="presentation" style="top: 30px; height: 570px;"><div class="ag-pinned-left-cols-viewport" role="presentation" style="display: none; width: 0px; height: 570px;"><div class="ag-pinned-left-cols-container" role="presentation" style="height: 1px; top: 0px; width: 0px;"></div></div><div class="ag-pinned-right-cols-viewport" role="presentation" style="display: none; width: 0px; height: 570px;"><div class="ag-pinned-right-cols-container" role="presentation" style="height: 1px; width: 0px;"></div></div><div class="ag-body-viewport-wrapper" role="presentation" style="margin-left: 0px; margin-right: 0px;"><div class="ag-body-viewport" role="presentation" style="overflow-y: auto;"><div class="ag-body-container" role="presentation" style="height: 1px; top: 0px; width: 984px;"></div></div></div><div class="ag-full-width-viewport ag-hidden" role="presentation"><div class="ag-full-width-container" role="presentation" style="height: 1px; top: 0px;"></div></div></div></div></div>  <div class="ag-bl-overlay" ref="overlay" style=""><div class="ag-overlay-panel" role="presentation"><div class="ag-overlay-wrapper ag-overlay-loading-wrapper"><span class="ag-overlay-loading-center">Загрузка...</span></div></div></div></div></div>  </div></div></div><div class="react-pagination-toolbar x-toolbar x-toolbar-default x-docked-bottom x-toolbar-docked-bottom x-toolbar-default-docked-bottom x-box-layout-ct x-panel-default-outer-border-rbl"><span class="x-btn-disabled x-btn-button x-btn-button-plain-toolbar-small  x-btn-no-text x-btn-icon x-btn-icon-left x-btn-button-center"><span class="x-btn-icon-el x-btn-icon-el-plain-toolbar-small x-tbar-page-first" title="Первая страница"></span></span><span class="x-btn-disabled x-btn-button x-btn-button-plain-toolbar-small  x-btn-no-text x-btn-icon x-btn-icon-left x-btn-button-center"><span class="x-btn-icon-el x-btn-icon-el-plain-toolbar-small x-tbar-page-prev" title="Предыдущая страница"></span></span><div class="react-table-cell x-toolbar-separator x-toolbar-separator-horizontal x-toolbar-item"></div><span class="react-table-cell x-toolbar-text x-toolbar-item x-toolbar-text-default">Страница 0 из 0</span><div class="react-table-cell x-toolbar-separator x-toolbar-separator-horizontal x-toolbar-item"></div><span class="x-btn-disabled x-btn-button x-btn-button-plain-toolbar-small  x-btn-no-text x-btn-icon x-btn-icon-left x-btn-button-center"><span class="x-btn-icon-el x-btn-icon-el-plain-toolbar-small x-tbar-page-next" title="Следующая страница"></span></span><span class="x-btn-disabled x-btn-button x-btn-button-plain-toolbar-small  x-btn-no-text x-btn-icon x-btn-icon-left x-btn-button-center"><span class="x-btn-icon-el x-btn-icon-el-plain-toolbar-small x-tbar-page-last" title="Последняя страница"></span></span><div class="react-table-cell x-toolbar-separator x-toolbar-separator-horizontal x-toolbar-item"></div><span class="react-table-cell x-toolbar-text x-toolbar-item x-toolbar-text-default">Отображаются записи с 0 по 0, всего 0</span></div></div></div></div></div></div></div></div></div><div class="app__footer"><div class="wrapper"><div class="footer__title">v.12.0.3.1 2021.12.06..00.09.10, © Все права защищены, Федеральное агентство лесного хозяйства</div></div></div><script type="text/javascript" src="/open-area/static/js/main.ed1d2e11.js"></script></body></html>
